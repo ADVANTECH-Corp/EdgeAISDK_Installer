@@ -12,9 +12,13 @@
      "object_node":"aarch64_Nvidia_Jetson_1",
      
      "item_default":{ 
-       "class":     ["Base","VisionAI","GenAI"],
-       "visible":   ["true","true","true"],
-       "select" :   ["false","true","true"]  
+       
+       "item":{
+          "class":     ["Base","VisionAI","GenAI"],
+          "visible":   ["true","true","true"],
+          "select" :   ["false","true","true"]  
+       } 
+       
      },
     
      "item_optional" : 
@@ -23,7 +27,7 @@
 
        "cmd":["ip link show | awk '/link\/ether/ {print $2}'"] ,
        
-       "config":[ 
+       "result":[ 
             {
               "result":["1c:22:55:96:3d:88"],
               "item":{  
