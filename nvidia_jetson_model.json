@@ -10,16 +10,39 @@
      "work_flow":"DVT",
      
      "object_node":"aarch64_Nvidia_Jetson_1",
-      
-     "config": {
+     
+     "item_default":{ 
+       "class":     ["Base","VisionAI","GenAI"],
+       "visible":   ["true","true","true"],
+       "select" :   ["false","true","true"]  
+     },
+    
+     "item_optional" : 
+     {
+       "use_optional":"false",  
+
+       "cmd":["ip link show | awk '/link\/ether/ {print $2}'"] ,
        
-       "isUse":"false",
-       
-       "mac_address":["1c:22:55:96:3d:88","1f:2a:5f:97:33:81"],
-       
-       "class":["GenAI" , "VisionAI","Base"]
-       
-      }
+       "config":[ 
+            {
+              "result":["1c:22:55:96:3d:88"],
+              "item":{  
+                 "class":     ["Base","VisionAI"],
+                 "visible":   ["true","true"],
+                 "select" :   ["false","true"]  
+              } 
+            },
+            {
+              "result":["6c:55:53:91:1d:00"],
+              "item":{ 
+                 "class":     ["Base","VisionAI","GenAI"],
+                 "visible":   ["true","true","true"],
+                 "select" :   ["false","false","true"]  
+              } 
+            }
+         
+         ] 
+     }
     }  
     
  } 
