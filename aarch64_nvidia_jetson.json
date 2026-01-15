@@ -1,32 +1,17 @@
 {
   "aarch64_nvidia_jetson": {
   
-    "cmd":["lshw -C systemshw -C system | grep product: | cut -d ':' -f 2"],
+    "cmd":["lshw -C systemshw -C system | grep product: | cut -d ':' -f 2","lsb_release -r" , "apt show nvidia-jetpack | grep Version | sed -e 's/Version://g'"],
      "reference":"nvidia_jetson_model.json",
      "result":[ 
        {
-        "name":"1" ,
-        "sku":"Orin NX",
-        "os_version": "22.04",
-        "jetpack_version": "6.2",
-        "supported_models": [
-        "p3768-0000+p3767-0003",
-        "p3768-0000+p3767-0004",
-        "p3768-0000+p3767-0005"
-        ] 
+        "name":"1" , 
+        "result":["Orin NX","22.04","6.2"]
        }, 
        {
         "name":"2" , 
-        "sku":"Orin Nano",
-        "os_version": "20.04",
-        "jetpack_version": "6.2",
-        "supported_models": [
-        "p3768-0000+p3767-0003",
-        "p3768-0000+p3767-0004",
-        "p3768-0000+p3767-0005"
-        ] 
+        "result":["Orin Nano","20.04","6.2"]
        }
-       
       ] 
   },
   

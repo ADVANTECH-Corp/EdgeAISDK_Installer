@@ -11,17 +11,11 @@
     "result":[
       {
         "name" : "intel_ultra" ,
-        "search_text": [
-        "Intel",
-        "Ultra" 
-        ]
+        "result": ["Intel Ultra"]
       } ,
       {
         "name" : "amd_ryzen" ,
-        "search_text": [
-        "AMD",
-        "Ryzen"
-        ]
+        "result": ["AMD Ryzen"]
       }
     ]
    
@@ -34,27 +28,17 @@
       {
         "name" : "nvidia_jetson" ,
         "reference":"aarch64_nvidia_jetson.json",
-        "search_text": [
-        "Nvidia",
-        "Jetson" 
-        ]
+        "result": ["Nvidia Jetson"]
       } ,
       {
         "name" : "qualcomm_qcs6490" ,
         "reference":"aarch64_qualcomm_series.json",
-        "search_text": [
-        "Qualcomm",
-        "QCS6490"
-        ]
+        "result": ["" ,"Qualcomm qcs6490"]
       } ,
       {
         "name" : "qualcomm_iq9" ,
         "reference":"aarch64_qualcomm_series.json",
-        "search_text": [
-        "Qualcomm",
-        "IQ9"
-        ]
-        
+        "result": ["" ,"Qualcomm qcs6490"]
       }
     ]  
   }
