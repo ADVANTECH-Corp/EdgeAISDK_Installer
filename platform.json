@@ -1,0 +1,63 @@
+{
+  "platform": {
+    
+    "cmd":"uname -m",
+    "result":["x86_64" ,"aarch64" ]
+    
+  },
+  
+  "platform_x86_64": {
+    "cmd":["lscpu | grep 'Model name'"],
+    "result":[
+      {
+        "name" : "intel_ultra" ,
+        "search_text": [
+        "Intel",
+        "Ultra" 
+        ]
+      } ,
+      {
+        "name" : "amd_ryzen" ,
+        "search_text": [
+        "AMD",
+        "Ryzen"
+        ]
+      }
+    ]
+   
+  },
+  
+  "platform_aarch64": {
+    "cmd":["lshw -C systemshw -C system | grep product: | cut -d ':' -f 2" , "lscpu" , "lspci"],
+    
+     "result":[
+      {
+        "name" : "nvidia_jetson" ,
+        "reference":"aarch64_nvidia_jetson.json",
+        "search_text": [
+        "Nvidia",
+        "Jetson" 
+        ]
+      } ,
+      {
+        "name" : "qualcomm_qcs6490" ,
+        "reference":"aarch64_qualcomm_series.json",
+        "search_text": [
+        "Qualcomm",
+        "QCS6490"
+        ]
+      } ,
+      {
+        "name" : "qualcomm_iq9" ,
+        "reference":"aarch64_qualcomm_series.json",
+        "search_text": [
+        "Qualcomm",
+        "IQ9"
+        ]
+        
+      }
+    ]  
+  }
+ 
+}
+ 

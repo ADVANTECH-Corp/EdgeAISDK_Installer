@@ -1,0 +1,28 @@
+{
+  
+  "cmd":["cat /opt/Advantech/EdgeAI/model.txt"],
+
+  
+  "result":{
+    
+     "AIR-021": {
+     
+     "work_flow":"DVT",
+     
+     "object_node":"aarch64_Nvidia_Jetson_1",
+      
+     "config": {
+       
+       "isUse":"false",
+       
+       "mac_address":["1c:22:55:96:3d:88","1f:2a:5f:97:33:81"],
+       
+       "class":["GenAI" , "VisionAI","Base"]
+       
+      }
+    }  
+    
+ } 
+ 
+}
+ 
