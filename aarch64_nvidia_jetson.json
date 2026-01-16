@@ -2,19 +2,23 @@
   "nvidia_jetson": {
   
     "cmd":["lshw -C systemshw -C system | grep product: | cut -d ':' -f 2","lsb_release -r" , "apt show nvidia-jetpack | grep Version | sed -e 's/Version://g'"],
-     "entry_node":"nvidia_jetson_model",
-     "reference":"nvidia_jetson_model.json",
+    
      "result":[ 
        {
         "name":"1" , 
-        "result":["Orin NX","22.04","6.2"]
+        "result":["Orin NX","22.04","6.2"],
+        "entry_node":"nvidia_jetson_model",
+        "reference":"nvidia_jetson_model.json"
        }, 
        {
         "name":"2" , 
-        "result":["Orin Nano","20.04","6.2"]
+        "result":["Orin Nano","22.04","6.2"],
+        "entry_node":"nvidia_jetson_model",
+        "reference":"nvidia_jetson_model.json"
        }
       ] 
   },
+  
   
   "aarch64_Nvidia_Jetson_1":{
     "location":"https://iedgeblob.blob.core.windows.net/ai-os-public/",
@@ -62,7 +66,57 @@
           "path": "System/Jetson_Orin"
         }
       ]
+  },
+  
+  
+  "aarch64_Nvidia_Jetson_2":{
+    "location":"https://iedgeblob.blob.core.windows.net/ai-os-public/",
+    "run_files": [
+        {
+          "work_flow":"PVT",
+          "class":"GenAI",
+          "require_size":"25Gb",
+          "filename": "Jetson_GenAI-1.0.3-alpha-thor-Ubuntu-24.04-aarch64.run",
+          "path": "System/Jetson_Orin"
+        },
+        {
+          "work_flow":"PVT",
+          "class":"VisionAI",
+          "require_size":"15Gb",
+          "filename": "Jetson_Orin_Ds7.1_VisionAI-2.0.0-Ubuntu-22.04-aarch64.run",
+          "path": "System/Jetson_Orin"
+        },
+         {
+          "work_flow":"DVT", 
+          "class":"Base",
+          "require_size":"600Mb",
+          "filename": "Jetson_Orin_Ds7.1_SDK-2.0.0-Ubuntu-22.04-aarch64.run",
+          "path": "System/Jetson_Orin"
+        },
+         {
+          "work_flow":"DVT", 
+          "class":"Base", 
+          "require_size":"150Mb",
+          "filename": "EAS_Main_WebAPP-1.1.0-Ubuntu_22.04-aarch64.run",
+          "path": "System/Jetson_Orin"
+        },
+         {
+          "work_flow":"DVT", 
+          "class":"Base", 
+          "require_size":"150Mb",
+          "filename": "EAS_Main_Data-1.0.0-Ubuntu_22.04-aarch64.run",
+          "path": "System/Jetson_Orin"
+        },
+        {
+          "work_flow":"DVT", 
+          "class":"Base",
+          "require_size":"2Mb",
+          "filename": "EAS_Main_Config-1.1.0-Ubuntu_22.04-aarch64.run",
+          "path": "System/Jetson_Orin"
+        }
+      ]
   }
+  
   
 }
  
