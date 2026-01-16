@@ -2,6 +2,7 @@
   "nvidia_jetson": {
   
     "cmd":["lshw -C systemshw -C system | grep product: | cut -d ':' -f 2","lsb_release -r" , "apt show nvidia-jetpack | grep Version | sed -e 's/Version://g'"],
+     "entry_node":"nvidia_jetson_model",
      "reference":"nvidia_jetson_model.json",
      "result":[ 
        {

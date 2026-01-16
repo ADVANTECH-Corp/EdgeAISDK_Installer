@@ -1,7 +1,8 @@
 {
+
+  "nvidia_jetson_model":{
   
   "cmd":["cat /opt/Advantech/EdgeAI/model.txt"],
-
   
   "result":{
     
@@ -9,47 +10,24 @@
      
      "work_flow":"DVT",
      
-     "object_node":"aarch64_Nvidia_Jetson_1",
+     "entry_node":"aarch64_Nvidia_Jetson_1",
      
-     "item_default":{ 
+     "item_default":{
        
-       "item":{
+          "optional":"false",
+          "entry_node":"nvidia_jetson_model_option",
+          "reference":"nvidia_jetson_model_option.json",
+       
           "class":     ["Base","VisionAI","GenAI"],
           "visible":   ["true","true","true"],
           "select" :   ["false","true","true"]  
-       } 
-       
-     },
-    
-     "item_optional" : 
-     {
-       "use_optional":"false",  
-
-       "cmd":["ip link show | awk '/link\/ether/ {print $2}'"] ,
-       
-       "result":[ 
-            {
-              "result":["1c:22:55:96:3d:88"],
-              "item":{  
-                 "class":     ["Base","VisionAI"],
-                 "visible":   ["true","true"],
-                 "select" :   ["false","true"]  
-              } 
-            },
-            {
-              "result":["6c:55:53:91:1d:00"],
-              "item":{ 
-                 "class":     ["Base","VisionAI","GenAI"],
-                 "visible":   ["true","true","true"],
-                 "select" :   ["false","false","true"]  
-              } 
-            }
-         
-         ] 
-     }
+      } 
+      
     }  
-    
- } 
+     
+  }
+ 
+ }
  
 }
  

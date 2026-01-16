@@ -1,0 +1,39 @@
+ {
+ 
+  "nvidia_jetson_model_option":{
+  
+  "cmd":["cat /opt/Advantech/EdgeAI/model.txt"],
+  
+  "result":{
+    
+     "AIR-021": { 
+       
+       "cmd":["ip link show | awk '/link\/ether/ {print $2}'"] ,
+       
+       "result":[ 
+            {
+              "result":["1c:22:55:96:3d:88"],
+              "item_option":{  
+                 "class":     ["Base","VisionAI"],
+                 "visible":   ["true","true"],
+                 "select" :   ["false","true"]  
+              } 
+            },
+            {
+              "result":["6c:55:53:91:1d:00"],
+              "item_option":{ 
+                 "class":     ["Base","VisionAI","GenAI"],
+                 "visible":   ["true","true","true"],
+                 "select" :   ["false","false","true"]  
+              } 
+            }
+         
+         ] 
+     
+    }  
+  } 
+ 
+ }
+ 
+}
+ 

@@ -1,3 +1,4 @@
+
 {
   "platform": {
     
@@ -26,17 +27,17 @@
     
      "result":[
       {
-        "name" : "nvidia_jetson" ,
+        "entry_node" : "nvidia_jetson" ,
         "reference":"aarch64_nvidia_jetson.json",
         "result": ["Nvidia Jetson"]
       } ,
       {
-        "name" : "qualcomm_qcs6490" ,
+        "entry_node" : "qualcomm_series" ,
         "reference":"aarch64_qualcomm_series.json",
         "result": ["" ,"Qualcomm qcs6490"]
       } ,
       {
-        "name" : "qualcomm_iq9" ,
+        "entry_node" : "qualcomm_series" ,
         "reference":"aarch64_qualcomm_series.json",
         "result": ["" ,"Qualcomm qcs6490"]
       }
