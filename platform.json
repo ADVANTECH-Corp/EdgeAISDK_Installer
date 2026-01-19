@@ -1,4 +1,3 @@
-
 {
   "platform": {
     
@@ -11,11 +10,13 @@
     "cmd":["lscpu | grep 'Model name'"],
     "result":[
       {
-        "name" : "intel_ultra" ,
-        "result": ["Intel Ultra"]
+        "entry_node" : "intel" ,
+        "reference":"x86_intel.json",
+        "result": ["Intel"]
       } ,
       {
-        "name" : "amd_ryzen" ,
+        "entry_node" : "amd_ryzen" ,
+        "reference":"aarch64_nvidia_jetson.json",
         "result": ["AMD Ryzen"]
       }
     ]
@@ -29,20 +30,19 @@
       {
         "entry_node" : "nvidia_jetson" ,
         "reference":"aarch64_nvidia_jetson.json",
-        "result": ["Nvidia Jetson"]
+        "result": ["Nvidia Jetson","",""]
       } ,
       {
         "entry_node" : "qualcomm_series" ,
         "reference":"aarch64_qualcomm_series.json",
-        "result": ["" ,"Qualcomm qcs6490"]
+        "result": ["" ,"Qualcomm qcs6490",""]
       } ,
       {
         "entry_node" : "qualcomm_series" ,
         "reference":"aarch64_qualcomm_series.json",
-        "result": ["" ,"Qualcomm qcs6490"]
+        "result": ["" ,"Qualcomm qcs6490",""]
       }
     ]  
   }
  
 }
- 
