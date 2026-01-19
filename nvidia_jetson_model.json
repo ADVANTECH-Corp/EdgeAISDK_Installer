@@ -4,30 +4,27 @@
   
   "cmd":["cat /opt/Advantech/EdgeAI/model.txt"],
   
-  "result":{
-    
-     "AIR-021": {
-     
-     "work_flow":"DVT",
-     
-     "entry_node":"aarch64_Nvidia_Jetson_1",
-     
-     "item_default":{
-       
-          "optional":"false",
-          "entry_node":"nvidia_jetson_model_option",
-          "reference":"nvidia_jetson_model_option.json",
-       
-          "class":     ["Base","VisionAI","GenAI"],
-          "visible":   ["true","true","true"],
-          "select" :   ["false","true","true"]  
-      } 
+  "result":[
+      {
       
-    }  
-     
-  }
- 
- }
- 
+       "result":["AIR-021"],
+       
+       "work_flow":"DVT",
+       
+       "entry_node":"aarch64_Nvidia_Jetson_1",
+       
+       "item_default":{
+         
+            "optional":"false",
+            "entry_node":"nvidia_jetson_model_option",
+            "reference":"nvidia_jetson_model_option.json",
+         
+            "class":     ["Base","VisionAI","GenAI"],
+            "visible":   ["true","true","true"],
+            "select" :   ["false","true","true"]  
+       }  
+   }
+  ]
+ } 
 }
  
