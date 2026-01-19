@@ -2,36 +2,36 @@
  
   "nvidia_jetson_model_option":{
   
-  "cmd":["cat /opt/Advantech/EdgeAI/model.txt"],
-  
-  "result":{
+    "cmd":["cat /opt/Advantech/EdgeAI/model.txt","ip link show | grep 'link/ether' | awk '{print $2}'"],
     
-     "AIR-021": { 
-       
-       "cmd":["ip link show | awk '/link\/ether/ {print $2}'"] ,
-       
-       "result":[ 
-            {
-              "result":["1c:22:55:96:3d:88"],
-              "item_option":{  
-                 "class":     ["Base","VisionAI"],
-                 "visible":   ["true","true"],
-                 "select" :   ["false","true"]  
-              } 
-            },
-            {
-              "result":["6c:55:53:91:1d:00"],
-              "item_option":{ 
-                 "class":     ["Base","VisionAI","GenAI"],
-                 "visible":   ["true","true","true"],
-                 "select" :   ["false","false","true"]  
-              } 
-            }
-         
-         ] 
-     
-    }  
-  } 
+    "result":[
+      {
+        "entry_node": "Custom_A",
+        "work_flow":"DVT",
+        "result": [
+                "AIR-012",            
+                "cc:82:7f:70:d9:cb"   
+          ],
+        "item_default": {
+              "class": ["Base", "VisionAI"],
+              "visible": ["true", "true"],
+              "select": ["false", "true"]
+          }
+      },
+      {
+        "entry_node": "Custom_B",
+        "work_flow":"DVT",
+        "result": [
+                "AIR-012",            
+                "6c:55:53:91:1d:00"   
+          ],
+        "item_default": {
+              "class": ["Base", "VisionAI", "GenAI"],
+              "visible": ["true", "true", "true"],
+              "select": ["false", "false", "true"]
+          }
+      }
+    ]
  
  }
  
