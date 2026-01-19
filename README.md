@@ -1,4 +1,4 @@
-# Edge AI SDK Installer 架構與配置使用說明書
+# Edge AI SDK Installer 
 
 ## 1. 簡介
 
