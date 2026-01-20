@@ -34,14 +34,14 @@
           "work_flow":"PVT",
           "class":"VisionAI",
           "require_size":"15Gb",
-          "filename": "Jetson_Orin_Ds7.1_VisionAI-2.0.0-Ubuntu-22.04-aarch64.run",
+          "filename": "Jetson_Orin_Ds7.1_VisionAI-2.1.0-Ubuntu-22.04-aarch64.run",
           "path": "System/Jetson_Orin"
         },
          {
           "work_flow":"DVT", 
           "class":"Base",
           "require_size":"600Mb",
-          "filename": "Jetson_Orin_Ds7.1_SDK-2.0.0-Ubuntu-22.04-aarch64.run",
+          "filename": "Jetson_Orin_Ds7.1_SDK-2.1.0-Ubuntu-22.04-aarch64.run",
           "path": "System/Jetson_Orin"
         },
          {
