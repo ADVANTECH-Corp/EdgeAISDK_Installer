@@ -1,12 +1,12 @@
 {
   "nvidia_jetson": {
   
-    "cmd":["ls","ls","ls"],
+    "cmd":["lshw -C systemshw -C system | grep product: | cut -d ':' -f 2","lsb_release -r","apt show nvidia-jetpack | grep Version | sed -e 's/Version://g'"],
     
      "result":[ 
        {
         "name":"1" , 
-        "result":["","",""],
+        "result":["Orin NX","22.04","6.2"],
         "entry_node":"nvidia_jetson_model",
         "reference":"nvidia_jetson_model.json"
        }, 
