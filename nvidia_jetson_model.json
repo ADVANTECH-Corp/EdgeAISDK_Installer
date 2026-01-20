@@ -9,7 +9,9 @@
       
        "result":["AIR-021"],
        
-       "work_flow":"DVT",
+       "work_flow":["DVT","PVT"],
+
+      "eas_version":"3.6.0",
        
        "entry_node":"aarch64_Nvidia_Jetson_1",
        
@@ -20,8 +22,8 @@
             "reference":"nvidia_jetson_model_option.json",
          
             "class":     ["Base","VisionAI","GenAI"],
-            "visible":   ["true","true","true"],
-            "select" :   ["false","true","true"]  
+            "visible":   ["true","true","false"],
+            "select" :   ["false","false","false"]  
        }  
    }
   ]
