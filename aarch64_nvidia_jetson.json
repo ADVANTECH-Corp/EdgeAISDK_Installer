@@ -27,7 +27,14 @@
           "work_flow":"PVT",
           "class":"GenAI",
           "require_size":"25Gb",
-          "filename": "Jetson_GenAI-1.0.3-alpha-thor-Ubuntu-24.04-aarch64.run",
+          "filename": "Jetson_GenAI_Chatbot-1.0.2-Ubuntu-22.04-aarch64.run",
+          "path": "System/Jetson_Orin"
+        },
+        {
+          "work_flow":"PVT",
+          "class":"GenAI",
+          "require_size":"15Gb",
+          "filename": "Jetson_GenAI_Chatbot_Docker-1.0.2-Ubuntu-22.04-aarch64.run",
           "path": "System/Jetson_Orin"
         },
         {
