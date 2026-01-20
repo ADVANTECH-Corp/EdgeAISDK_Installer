@@ -22,8 +22,8 @@
             "reference":"nvidia_jetson_model_option.json",
          
             "class":     ["Base","VisionAI","GenAI"],
-            "visible":   ["true","true","false"],
-            "select" :   ["false","false","false"]  
+            "visible":   ["true","true","true"],
+            "select" :   ["false","true","true"]  
        }  
    }
   ]
