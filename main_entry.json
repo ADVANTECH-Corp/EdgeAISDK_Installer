@@ -1,0 +1,17 @@
+{
+
+    "main_entry": {
+    
+     "cmd":["sudo apt update && sudo apt install -y git dialog jq","git clone https://github.com/ADVANTECH-Corp/EdgeAISDK_Installer.git script/config","[ -f script/config/platform.json ] && echo existed || echo fail"] ,
+    
+     "result":["" ,"","existed" ] ,
+    
+     "err_msg":["","","Can't download config files or Internet not connected"] ,
+    
+     "entry_node" : "platform" ,
+       
+     "reference":"platform.json"
+   } 
+ 
+ 
+}
