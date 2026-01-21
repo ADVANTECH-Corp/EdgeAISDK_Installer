@@ -9,12 +9,6 @@
         "result":["Orin NX","22.04","6.2"],
         "entry_node":"nvidia_jetson_model",
         "reference":"nvidia_jetson_model.json"
-       }, 
-       {
-        "name":"2" , 
-        "result":["Orin Nano","22.04","6.2"],
-        "entry_node":"nvidia_jetson_model",
-        "reference":"nvidia_jetson_model.json"
        }
       ] 
   },
