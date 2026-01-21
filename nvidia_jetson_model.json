@@ -26,7 +26,8 @@
             "select" :   ["false","true","true"]  
        }  
    }
-  ]
+  ],
+  "err_msg":[""]
  } 
 }
  

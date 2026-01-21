@@ -12,6 +12,7 @@
                 "AIR-012",            
                 "cc:82:7f:70:d9:cb"   
           ],
+        "err_msg":["",""],
         "item_default": {
               "class": ["Base", "VisionAI"],
               "visible": ["true", "true"],
@@ -25,6 +26,7 @@
                 "AIR-012",            
                 "6c:55:53:91:1d:00"   
           ],
+        "err_msg":["",""],
         "item_default": {
               "class": ["Base", "VisionAI", "GenAI"],
               "visible": ["true", "true", "true"],

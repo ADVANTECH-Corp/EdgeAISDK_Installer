@@ -2,8 +2,8 @@
   "platform": {
     
     "cmd":"uname -m",
-    "result":["x86_64" ,"aarch64" ]
-    
+    "result":["x86_64" ,"aarch64" ],
+    "err_msg":""
   },
   
   "platform_x86_64": {
@@ -12,15 +12,17 @@
       {
         "entry_node" : "intel" ,
         "reference":"x86_intel.json",
-        "result": ["Intel"]
+        "result": ["Intel"],
+        "err_msg":[""]
       } ,
       {
         "entry_node" : "amd_ryzen" ,
         "reference":"aarch64_nvidia_jetson.json",
-        "result": ["AMD Ryzen"]
+        "result": ["AMD Ryzen"],
+        "err_msg":[""]
       }
-    ]
-   
+    ],
+    "err_msg":["",""]
   },
   
   "platform_aarch64": {
@@ -30,19 +32,23 @@
       {
         "entry_node" : "nvidia_jetson" ,
         "reference":"aarch64_nvidia_jetson.json",
-        "result": ["Nvidia Jetson","",""]
+        "result": ["Nvidia Jetson","",""],
+         "err_msg":["","",""]
       } ,
       {
         "entry_node" : "qualcomm_series" ,
         "reference":"aarch64_qualcomm_series.json",
-        "result": ["" ,"Qualcomm qcs6490",""]
+        "result": ["" ,"Qualcomm qcs6490",""],
+         "err_msg":["","",""]
       } ,
       {
         "entry_node" : "qualcomm_series" ,
         "reference":"aarch64_qualcomm_series.json",
-        "result": ["" ,"Qualcomm qcs6490",""]
+        "result": ["" ,"Qualcomm qcs6490",""],
+         "err_msg":["","",""]
       }
-    ]  
+    ],
+    "err_msg":["","",""]
   }
  
 }
